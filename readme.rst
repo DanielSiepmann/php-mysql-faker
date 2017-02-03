@@ -71,6 +71,14 @@ types are supported:
             class: DSiepmann\Userfunction\RepeatingFilenames
             method: filename
 
+``faker``
+    Uses a formatter defined by `faker`_.
+
+    .. code:: yml
+
+        date:
+            type: faker
+            formatter: dateTime
 
 .. _faker: https://github.com/fzaninotto/Faker
 .. _Doctrine DBAL: http://www.doctrine-project.org/projects/dbal.html

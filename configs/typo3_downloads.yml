@@ -17,3 +17,6 @@ data:
     type: userfunc
     class: DSiepmann\Userfunction\RepeatingFilenames
     method: filename
+  date:
+      type: faker
+      formatter: dateTime

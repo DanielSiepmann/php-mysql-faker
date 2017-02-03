@@ -121,6 +121,18 @@ class FakeMysqlCommand extends Command
             return $userfunction->$userMethod();
         }
 
+        if ($config['type'] === 'faker') {
+            $formatterToUse = $config['formatter'];
+
+            $fakerData = $this->faker->$formatterToUse();
+
+            if ($fakerData instanceof \DateTime) {
+                $fakerData = $fakerData->format('Y-m-d H:i:s');
+            }
+
+            return $fakerData;
+        }
+
         throw new \Exception('Unkown configured value.', 1486135949);
     }
 }
