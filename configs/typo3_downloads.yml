@@ -1,0 +1,19 @@
+database:
+  dbname: typo3_git_62
+  user: root
+  password:
+  host: localhost
+  unix_socket: /tmp/mysql.sock
+  driver: pdo_mysql
+
+data:
+  pid:
+    type: static
+    value: 1
+  count:
+    type: static
+    value: 1
+  name:
+    type: userfunc
+    class: DSiepmann\Userfunction\RepeatingFilenames
+    method: filename

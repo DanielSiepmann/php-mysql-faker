@@ -1,0 +1,24 @@
+{
+    "name": "DSiepmann\\faker",
+    "description": "Insert fake data into MySQL Table using PHP Edit",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Siepmann",
+            "email": "coding@daniel-siepmann.de",
+            "homepage": "https://daniel-siepmann.de",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DSiepmann\\": "src"
+        }
+    },
+    "require": {
+        "fzaninotto/faker": "^1.6",
+        "symfony/console": "^3.2",
+        "doctrine/dbal": "^2.5",
+        "symfony/yaml": "^3.2"
+    }
+}
